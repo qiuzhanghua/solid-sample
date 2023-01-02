@@ -1,4 +1,4 @@
-# SolidJS with Vite
+# 1. SolidJS with Vite
 
 ```bash
 pnpm create vite solid-sample --template vanilla-ts
@@ -37,3 +37,7 @@ pnpm dev
 ```
 
 and visit  http://localhost:5173/
+
+
+# 2. Add TailwindCSS support
+https://tailwindcss.com/docs/guides/solidjs
