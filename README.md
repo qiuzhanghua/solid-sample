@@ -53,3 +53,13 @@ or
 ```bash
 pnpm coverage
 ```
+
+## 4. Add eslint and prettier
+
+```bash
+pnpm lint
+```
+
+```bash
+pnpm format
+```
