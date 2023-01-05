@@ -41,3 +41,15 @@ and visit  http://localhost:5173/
 
 # 2. Add TailwindCSS support
 https://tailwindcss.com/docs/guides/solidjs
+
+## 3. Test
+
+```bash
+pnpm test
+# hot load test not supported!!! :(
+```
+
+or 
+```bash
+pnpm coverage
+```
