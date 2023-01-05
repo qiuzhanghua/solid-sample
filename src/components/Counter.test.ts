@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it } from "vitest";
 import { cleanup, render, fireEvent, screen } from "@solidjs/testing-library";
-import { Counter } from "./counter";
+import Counter from "./Counter";
 
 describe("<Counter />", () => {
   afterEach(() => cleanup());

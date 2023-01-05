@@ -1,16 +1,17 @@
-import { Counter } from "./counter";
+import { Route, Routes } from "@solidjs/router";
+import { lazy } from "solid-js";
+const Home = lazy(() => import("./pages/Home"));
 
-export const App = () => {
+export default function App () {
   return (
     <>
-      <div>
-        <h1 class="text-3xl text-red-500 font-bold underline">
-          Vite + TypeScript + SolidJS
-        </h1>
-        <div class="card">
-          <Counter />
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" component={Home} />
+        <Route
+          path="/about"
+          element={<div>This site was made with Solid</div>}
+        />
+      </Routes>
     </>
   );
-};
+}
