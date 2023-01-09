@@ -1,3 +1,5 @@
+import { A } from "@solidjs/router";
+
 const Navbar = () => {
   return (
     <>
@@ -6,18 +8,22 @@ const Navbar = () => {
           <div class="flex h-16 justify-between">
             <div class="flex">
               <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                <a
+                <A
                   href="/"
-                  class="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
+                  end
+                  activeClass="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
+                  inactiveClass="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
                 >
                   Home
-                </a>
-                <a
+                </A>
+                <A
                   href="/about"
-                  class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                  end
+                  activeClass="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
+                  inactiveClass="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
                 >
                   About
-                </a>
+                </A>
               </div>
             </div>
           </div>
