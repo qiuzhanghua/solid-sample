@@ -1,14 +1,15 @@
 import { styled } from "../stitches.config";
 
 const Button = styled("button", {
-  backgroundColor: "lightblue",
+  backgroundColor: "$lime600",
   borderRadius: "$xl",
   fontSize: "16px",
-  padding: "10px 15px",
+  // padding: "10px 15px",
   "&:hover": {
     backgroundColor: "blue"
   },
-  marginLeft: "1em",
+  m: "1em",
+  p: "2em",
   color: "$indigo100"
 });
 
