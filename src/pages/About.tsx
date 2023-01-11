@@ -1,14 +1,15 @@
-import { styled } from "solid-stitches";
+import { styled } from "../stitches.config";
 
 const Button = styled("button", {
   backgroundColor: "lightblue",
-  borderRadius: "1em",
+  borderRadius: "$xl",
   fontSize: "16px",
   padding: "10px 15px",
   "&:hover": {
     backgroundColor: "blue"
   },
-  color: "white"
+  marginLeft: "1em",
+  color: "$indigo100"
 });
 
 export default function () {
